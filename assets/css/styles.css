@@ -4,19 +4,60 @@ html {
 
 body {
 	height: 100%;
-	font: normal 25em "Favorit", sans-serif;
 	color: red;
 	margin: 0;
 	border: 2px blue solid;
+	background-color: #666666;
 
 }
 
+.Header {
+	margin: 2vw;
+	/*border: 1px white solid;*/
+}
+
 .Heading {
-	position: fixed;
+    -webkit-text-stroke: 1px #913B00; /* width and color */
+	font: normal 12em "Love", sans-serif;
+	color: #A0D5BB;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	/*border: 2px blue solid;*/
+}
+
+.Superheading {
+    -webkit-text-stroke: 1px #913B00; /* width and color */
+	font: normal 2em "Favourit", sans-serif;
+	color: #FF5B45;
+	padding: 1em 1em 0em 1em;
+	/*border: 1px white solid;*/
+}
+
+.Maintext {
+	position: static;
+	display: flex;
+	flex-flow: row nowrap;
+	/*border: 1px white solid;*/
+
+    -webkit-text-stroke: 1px #913B00; /* width and color */
+	font: normal 2em "Favourit", sans-serif;
+	color: #FF5B45;
+/*	border: 1px white solid;*/
+}
+
+.Names {
+	width: 50%;
+	display: block;
+	padding: 1em 1em 1em 1em;
+	/*border: 1px white solid;*/
+}
+
+.Blurb {
+	width: 50%;
+	display: block;
+	padding: 1em 1em 1em 1em;
+	/*border: 1px white solid;*/
 }
 
 .parallax {
@@ -36,16 +77,16 @@ body {
 
 .parallax__layer--base {
 	transform: translateZ(-1px) scale(3);
-/*	background-image: url("../img/bg-back.png");
-*/	border: 2px yellow solid;
+/*	background-image: url("../img/bg-back.png");*/	
+	/*border: 2px yellow solid;*/
 }
 
 .parallax__layer--back {
 	transform: translateZ(0) scale(1);
-	border: 2px pink solid;
+	/*border: 2px pink solid;*/
 }
 
 .parallax__layer--deep {
 	transform: translateZ(-2px) scale(3);
-	border: 2px green solid;
+	/*border: 2px green solid;*/
 }

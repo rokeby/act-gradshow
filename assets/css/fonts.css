@@ -1,3 +1,12 @@
+/* Love */
+
+@font-face {
+  font-family: "Love";
+  src: url("../fonts/Love.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Favorit */
 @font-face {
   font-family: "Favorit";
