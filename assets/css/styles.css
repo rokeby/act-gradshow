@@ -74,7 +74,7 @@ h2 {
 /*Main*/
 
 .Main {
-	margin: 5vh 1vh 5vh 1vh;
+	margin: 50vh 1vh 5vh 1vh;
 }
 
 .Names {
@@ -112,6 +112,9 @@ h2 {
 	overflow-y: auto;	
 }
 
+.parallax img {
+}
+
 .parallax__layer {
 	position: absolute;
 	top: 0;
@@ -121,9 +124,13 @@ h2 {
 }
 
 .parallax__layer--base {
-	transform: translateZ(-1px) scale(3);
+	transform: translateZ(-1px) scale(2);
 /*	background-image: url("../img/bg-back.png");*/	
 	/*border: 2px yellow solid;*/
+}
+
+.parallax__layer--base img {
+	width: 100vw;
 }
 
 .parallax__layer--back {
@@ -131,11 +138,17 @@ h2 {
 	/*border: 2px pink solid;*/
 }
 
+
 .parallax__layer--deep {
 	transform: translateZ(-2px) scale(3);
 	pointer-events: none;
 	/*border: 2px green solid;*/
 }
+
+.parallax__layer--deep img {
+	width: 100vw;
+}
+
 
 /*Artist Page*/
 
