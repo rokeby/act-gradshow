@@ -32,11 +32,18 @@ h1 {
 }
 
 h2 {
-	font: normal 11.5rem "Love", sans-serif;
+	font: normal 11.5vw "Love", sans-serif;
 /*    -webkit-text-stroke: 1px #913B00;*/
 	color: #A0D5BB;
 	margin: 0;
 	padding: 0;
+}
+
+.backArrow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 4rem;
 }
 
 .grid-container {

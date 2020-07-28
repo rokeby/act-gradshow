@@ -37,8 +37,6 @@ h4 {
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	border: 3px solid white;
-	border-style: dotted;
 	padding: 2rem 4rem 2rem 4rem;
 }
 
@@ -94,7 +92,6 @@ h4 {
 	grid-column-end: 6;
 	margin: 50vh 0 0 0;
 	text-align: center;
-	border: 1px white solid;
 }
 
 .Portal img {
