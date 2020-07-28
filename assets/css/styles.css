@@ -299,6 +299,22 @@ animation: fadeIn ease 0.5s;
 		margin: 0;
 		padding: 0;
 	}
+
+	.Header {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+	padding: 2rem 2rem 2rem 2rem;
+
+/*	border: 3px solid white;
+	border-style: dotted;*/
+
+}
+
 }
 
 
