@@ -138,6 +138,12 @@ h2 {
 	margin: 50vh 0 0 0;
 }
 
+.Work iframe {
+	grid-column-start: 1;
+	grid-column-end: 6;	
+	height: 100vh;
+}
+
 .videoWrapper {
 	position: relative;
 	grid-column-start: 1;
@@ -147,24 +153,30 @@ h2 {
 }
 
 .videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-
-.image {
-	margin: 20vh 0 0 0;
+.imageWrapper {
+	margin: 0 0 0 0;
 	grid-column-start: 1;
 	grid-column-end: 6;
-	width: 90vw;
-	border: white 1px solid;
+	text-align: center;
+}
+
+.image {
+	margin: 0 0 20vh 0;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	max-width: 90vw;
+	text-align: center;
 }
 
 .imageL {
-	margin: 20vh 0 0 0;
+	margin: 0 0 20vh 0;
 	grid-column-start: 1;
 	grid-column-end: 6;
 	width: 40vw;
@@ -172,7 +184,7 @@ h2 {
 }
 
 .imageR {
-	margin: 20vh 0 0 0;
+	margin: 0 0 20vh 0;
 	grid-column-end: 6;
 	width: 40vw;
 	border: white 1px solid;
