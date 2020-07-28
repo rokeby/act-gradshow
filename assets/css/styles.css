@@ -42,9 +42,11 @@ h2 {
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	border: 3px solid white;
-	border-style: dotted;
 	padding: 2rem 4rem 2rem 4rem;
+
+/*	border: 3px solid white;
+	border-style: dotted;*/
+
 }
 
 /*Header*/
@@ -180,14 +182,14 @@ h2 {
 	grid-column-start: 1;
 	grid-column-end: 6;
 	width: 40vw;
-	border: white 1px solid;
+	/*border: white 1px solid;*/
 }
 
 .imageR {
 	margin: 0 0 20vh 0;
 	grid-column-end: 6;
 	width: 40vw;
-	border: white 1px solid;
+	/*border: white 1px solid;*/
 }
 
 .Statement {
@@ -195,7 +197,7 @@ h2 {
 	grid-column-start: 1;
 	grid-column-end: 4;
 	/*border-radius: 100%;*/
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 }
 
 .Portal {
@@ -203,7 +205,7 @@ h2 {
 	grid-column-end: 6;
 	margin: 50vh 0 0 0;
 	text-align: center;
-	border: 1px white solid;
+	/*border: 1px white solid;*/
 }
 
 .Portal img {
