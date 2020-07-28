@@ -1,14 +1,14 @@
 html {
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body {
 	height: 100%;
 	color: red;
 	margin: 0;
-	border: 2px blue solid;
 	background-color: #666666;
-
+	overflow: auto;
 }
 
 a {
@@ -20,60 +20,82 @@ a:hover {
 	text-decoration: underline;
 }
 
-.Header {
-	margin: 2vw;
-	/*border: 1px white solid;*/
+p {
+	margin-top: 0;
 }
 
-.Heading {
-    -webkit-text-stroke: 1px #913B00; /* width and color */
-	font: normal 12em "Love", sans-serif;
+h1 {
+	font: normal 2em "Favourit", sans-serif;
+	color: #FF5B45;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font: normal 11.5rem "Love", sans-serif;
+/*    -webkit-text-stroke: 1px #913B00;*/
 	color: #A0D5BB;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/*border: 2px blue solid;*/
+	margin: 0;
+	padding: 0;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+	border: 3px solid white;
+	border-style: dotted;
+	padding: 2rem 4rem 2rem 4rem;
+}
+
+/*Header*/
+
+.Header {
+	grid-column-start: 1;
+	grid-column-end: 6;
 }
 
 .Superheading {
-    -webkit-text-stroke: 1px #913B00; /* width and color */
-	font: normal 2em "Favourit", sans-serif;
-	color: #FF5B45;
-	padding: 1em 1em 0em 1em;
-	/*border: 1px white solid;*/
+	margin: 0vh 1vh 0vh 1vh;
 }
 
-.Maintext {
-	position: static;
-	display: flex;
-	flex-flow: row nowrap;
-	/*border: 1px white solid;*/
+/*Main*/
 
-    -webkit-text-stroke: 1px #913B00; /* width and color */
-	font: normal 2em "Favourit", sans-serif;
-	color: #FF5B45;
-/*	border: 1px white solid;*/
+.Main {
+	margin: 5vh 1vh 5vh 1vh;
 }
 
 .Names {
-	width: 50%;
-	display: block;
-	padding: 1em 1em 1em 1em;
-	/*border: 1px white solid;*/
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
-
 
 .Blurb {
-	width: 50%;
-	display: block;
-	padding: 1em 1em 1em 1em;
-	/*border: 1px white solid;*/
+	grid-column-start: 3;
+	grid-column-end: 6;
 }
+
+/* Footer */
+
+.Footer {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	margin: 50vh 4rem 2rem 4rem;
+}
+
+.Footer img {
+	height: 10vh; 
+ }
+
+
+/*Overlay*/
 
 .parallax {
 	perspective: 1px;
 	height: 100%;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	overflow-y: auto;	
 }
 
@@ -101,3 +123,85 @@ a:hover {
 	pointer-events: none;
 	/*border: 2px green solid;*/
 }
+
+/*Artist Page*/
+
+.Work {
+	margin: 0 0 0 0;
+}
+
+.videoWrapper {
+	position: relative;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Statement {
+	margin: 50vh 0 0 0;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	border-radius: 100%;
+	border: 1px solid white;
+}
+
+.Portal {
+	grid-column-start: 3;
+	grid-column-end: 6;
+	margin: 50vh 0 0 0;
+	text-align: center;
+	border: 1px white solid;
+}
+
+.Portal img {
+	position: static;
+	height: 20vh;
+}
+
+.Bio {
+	margin: 50vh 0 0 0;
+	grid-column-start: 3;
+	grid-column-end: 6;
+}
+
+/*Emma*/
+
+.Emma-Video {
+	position: relative;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	margin: 50vh 0 0 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.Emma-videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+.Emma-videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
