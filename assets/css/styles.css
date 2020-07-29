@@ -51,10 +51,6 @@ h2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
 	padding: 2rem 4rem 2rem 4rem;
-
-/*	border: 3px solid white;
-	border-style: dotted;*/
-
 }
 
 /*Header*/
@@ -113,9 +109,6 @@ h2 {
 	overflow-y: auto;	
 }
 
-.parallax img {
-}
-
 .parallax__layer {
 	position: absolute;
 	top: 0;
@@ -150,6 +143,70 @@ h2 {
 	width: 100vw;
 }
 
+/* Artist Menu General */
+
+.artistItem {
+	display: flex;
+	flex-flow: row;
+	margin: 0rem 0 0 0;
+}
+
+.artistItem img {
+	width: 30vw;
+}
+
+.artistThumbnail {
+	margin: 0 0rem 0 0rem;
+}
+
+.artistInfo {
+	margin: 0 0 0 0;
+}
+
+.artistName {
+}
+
+.artistTitle {
+	font: normal 8vw "Love", sans-serif;
+	text-align: left;
+	color: #A0D5BB;
+}
+
+
+/* Artist Item Positions */
+
+.artistLeft {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.artistLeft * {
+	flex-flow: column;
+	text-align: left;
+}
+
+.artistMiddle {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.artistMiddle * {
+	flex-flow: column;
+	text-align: right;
+}
+
+.artistRight {
+	grid-column-end: 6;
+}
+
+.artistRight .artistItem {
+	flex-flow: row;
+	text-align: right;
+}
+
+.artistRight .artistItem * {
+	text-align: right;
+}
 
 /*Artist Page*/
 
@@ -349,12 +406,12 @@ animation: fadeIn ease 0.5s;
 	}
 
 	.Footer {
-		grid-column-start: 1;
-		grid-column-end: 6;
-		display: flex;
-		flex-flow: row;
-		justify-content: space-between;
-		margin: 50vh 1rem 1rem 1rem;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	margin: 50vh 1rem 1rem 1rem;
 	}
 }
 
