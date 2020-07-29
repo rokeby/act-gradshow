@@ -152,7 +152,7 @@ h2 {
 }
 
 .artistItem img {
-	height: 30vh;
+	height: 50vh;
 }
 
 .artistThumbnail {
@@ -201,8 +201,9 @@ h2 {
 	text-align: right;
 }
 
-.artistMiddle .artistInfo {
+.artistMiddle .artistInfo * {
 	margin: 1rem 0 0 0;
+	text-align: right;
 }
 
 .artistRight {
@@ -222,6 +223,11 @@ h2 {
 .artistRight .artistThumbnail {
 	margin: 0 0 0 1rem;
 
+}
+
+.artistTitle a {
+	color: #A0D5BB;
+	text-decoration: none;
 }
 
 /*Artist Page*/
