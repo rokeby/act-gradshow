@@ -1,0 +1,89 @@
+/* Love */
+
+@font-face {
+  font-family: "Love";
+  src: url("../fonts/Love.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Favorit */
+@font-face {
+  font-family: "Favorit";
+  src: url("../fonts/Favorit-Light.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("../fonts/Favorit-LightItalic.woff") format("woff");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("../fonts/Favorit-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("../fonts/Favorit-MediumItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("../fonts/Favorit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("../fonts/Favorit-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* La Nord */
+
+@font-face {
+  font-family: "La Nord";
+  src: url("../fonts/La-Nord-Light.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "La Nord";
+  src: url("../fonts/La-Nord-SemiLight.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "La Nord";
+  src: url("../fonts/La-Nord-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "La Nord";
+  src: url("../fonts/La-Nord-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "La Nord";
+  src: url("../fonts/La-Nord-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
