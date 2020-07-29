@@ -4,39 +4,64 @@ html {
 }
 
 body {
+	color: #FFF;
 	height: 100%;
 	margin: 0;
-	background-color: #666666;
+	background-color: #000;
 	overflow: auto;
 }
 
 a {
 	text-decoration: none;
-	color: #FF5B45;
+	color: #FFF;
 }
 
 a:hover {
 	text-decoration: underline;
 }
 
-p {
-	margin-top: 0;
-}
-
+/*Big LOVE Titles*/
 h1 {
-	font: normal 2em "Favourit", sans-serif;
-	color: #FF5B45;
-	padding: 0;
-	margin: 0;
-}
-
-h2 {
 	font: normal 13vw "Love", sans-serif;
-/*    -webkit-text-stroke: 1px #913B00;*/
-	color: #A0D5BB;
 	line-height: 95%;
 	margin: 0;
 	padding: 0;
+}
+/*Artist Names and Links to Works*/
+
+h2 {
+	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	line-height: 120%
+}
+
+/* Small LOVE names of works*/
+h3 {
+	font: normal 8vw "Love", sans-serif;
+	text-align: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	
+}
+
+h3 a:hover {
+	text-decoration: none;
+}
+
+/* Text Subtitles*/
+h4 {
+	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
+	padding: 0;
+	margin: 0 0 2rem 0;	
+	line-height: 110%
+}
+
+/*Body Text*/
+p {
+	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
+	padding: 0;
+	margin-top: 0;
+	line-height: 110%
 }
 
 .backArrow {
@@ -90,14 +115,16 @@ h2 {
 	grid-column-end: 6;
 	display: flex;
 	flex-flow: row;
-	justify-content: space-between;
-	margin: 20vh 4rem 1rem 4rem;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 7vh 0rem 1rem 0rem;
 }
 
 .Footer img {
 	width: 10vw; 
 	height: auto;
 	align-self: center;
+	margin: 0 4rem 0 0;
  }
 
 
@@ -172,9 +199,6 @@ h2 {
 }
 
 .artistTitle {
-	font: normal 8vw "Love", sans-serif;
-	text-align: left;
-	color: #A0D5BB;
 }
 
 
@@ -227,11 +251,6 @@ h2 {
 .artistRight .artistThumbnail {
 	margin: 0 0 0 1rem;
 
-}
-
-.artistTitle a {
-	color: #A0D5BB;
-	text-decoration: none;
 }
 
 /*Artist Page*/
@@ -498,7 +517,7 @@ animation: fadeIn ease 0.5s;
 	.Mobile {
 		display: none;
 	}
-	
+
 	.Tablet {
 	display: block;
 	}

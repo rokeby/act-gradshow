@@ -3,35 +3,68 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	color: #FFF;
+	height: 100%;
+	margin: 0;
+	background-color: #000;
+	overflow: auto;
+}
+
 .FO a {
 	text-decoration: none;
-	color: #FF5B45;
+	color: #FFF;
 }
 
 .FO a:hover {
-	text-decoration: underline;
+	text-decoration: line-through;
 }
 
-.FO p {
-	margin-top: 0;
-}
-
-h3 {
-	font: normal 2em "Favourit", sans-serif;
-	color: #FF5B45;
-	padding: 0;
-}
-
-h4 {
-	font: normal 11.5rem "Love", sans-serif;
-/*    -webkit-text-stroke: 1px #913B00;*/
-	color: #A0D5BB;
+/*Big LOVE Titles*/
+h1 {
+	font: normal 13vw "Love", sans-serif;
+	line-height: 95%;
 	margin: 0;
 	padding: 0;
 }
 
+/*Artist Names and Links to Works*/
+h2 {
+	font: normal 2.4rem "Favourit", sans-serif;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+/* Small LOVE names of works*/
+h3 {
+	font: normal 8vw "Love", sans-serif;
+	text-align: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	
+}
+
+h3 a:hover {
+	text-decoration: none;
+}
+
+/* Text Subtitles*/
+h4 {
+	font: normal 2.4rem "Favourit", sans-serif;
+	padding: 0;
+	margin: 0 0 2rem 0;	
+}
+
+/*Body Text*/
+.FO p {
+	font: normal 2.4rem "Favourit", sans-serif;
+	padding: 0;
+	margin-top: 0;
+	line-height: 110%
+}
+
+
 .FO {
-	background-color: #666666;
+	background-color: #000;
 }
 
 .grid-container {
@@ -55,18 +88,34 @@ h4 {
 	min-height: 50vh;
 } 
 
+/*Main*/
+
+.Main {
+	margin: 50vh 1vh 5vh 1vh;
+}
+
+.Names {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.Blurb {
+	grid-column-start: 3;
+	grid-column-end: 6;
+}
+
 /*Gradient*/
 
 .inGradient {
 	height: 150vh;
 	width: 100vw;
-	background-image: linear-gradient(#666666, #ebeced);
+	background-image: linear-gradient(#000, #ebeced);
 }
 
 .outGradient {
 	height: 100vh;
 	width: 100vw;
-	background-image: linear-gradient(#ebeced, #666666);
+	background-image: linear-gradient(#ebeced, #000);
 }
 
 /*Artist Page*/
@@ -156,15 +205,21 @@ h4 {
 
 /*Begin Matt*/
 
-h1 {
+body .Matt {
+	background-color: #ebeced;
+ 	font-family:  sans-serif;
+ 	margin: 0;
+ 	color: #000;
+ }
+
+h5 {
 	text-align: center; color: black; font-family: "Franklin Gothic Std Book", sans-serif;
 	line-height: 1.4;
 	font-size: 30pt;
 	margin-bottom: 450px;
-
-	margin-top: 200px;
+	margin-top: 0;
 }
-h2 {
+h6 {
 	text-align: center; color: black; font-family: "Franklin Gothic Std Book", sans-serif;
 	margin-top: 400px;
 	margin-bottom: 200px;
@@ -185,11 +240,6 @@ h2 {
 	margin-bottom: 1000px;
   }
 
-body {
-	background-color: #ebeced;
- 	font-family:  sans-serif;
- 	margin: 0;
- }
 
 tr {
   text-align: left;
