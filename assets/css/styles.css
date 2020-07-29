@@ -107,7 +107,9 @@ h2 {
 	perspective: 1px;
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: auto;	
+	overflow-y: auto;
+	background-image: url("../img/bg/tree.jpg");
+	background-repeat: repeat-y;	
 }
 
 .parallax__layer {
@@ -446,8 +448,8 @@ animation: fadeIn ease 0.5s;
 	height: 100%;
 	color: red;
 	margin: 0;
-	background-color: lightgreen;
-	overflow: auto;
+/*	background-color: lightgreen;
+*/	overflow: auto;
 	}
 
 	h1 {
