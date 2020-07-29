@@ -5,7 +5,6 @@ html {
 
 body {
 	height: 100%;
-	color: red;
 	margin: 0;
 	background-color: #666666;
 	overflow: auto;
@@ -127,6 +126,7 @@ h2 {
 
 .parallax__layer--base img {
 	width: 100vw;
+	margin-top: -1rem;
 }
 
 .parallax__layer--back {
