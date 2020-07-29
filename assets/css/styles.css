@@ -38,7 +38,7 @@ h2 {
 
 /* Small LOVE names of works*/
 h3 {
-	font: normal 8vw "Love", sans-serif;
+	font: normal 8vw/80% "Love", sans-serif;
 	text-align: left;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;	
@@ -196,9 +196,6 @@ p {
 
 .artistName {
 	margin: 0 0 0.5rem 0;
-}
-
-.artistTitle {
 }
 
 
@@ -370,36 +367,36 @@ p {
 /* Animation */
 
 .fade-in {
-animation: fadeIn ease 0.5s;
--webkit-animation: fadeIn ease 0.5s;
--moz-animation: fadeIn ease 0.5s;
--o-animation: fadeIn ease 0.5s;
--ms-animation: fadeIn ease 0.5s;
+	animation: fadeIn ease 0.5s;
+	-webkit-animation: fadeIn ease 0.5s;
+	-moz-animation: fadeIn ease 0.5s;
+	-o-animation: fadeIn ease 0.5s;
+	-ms-animation: fadeIn ease 0.5s;
 }
 
 @keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 
 @-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 
 @-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 
 @-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 
 @-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 
 /* Desktop */
@@ -416,58 +413,132 @@ animation: fadeIn ease 0.5s;
 
 @media all and (max-width: 800px) {
 
-  body {
-    background-color: lightblue;
-  }
+	h2, h4, p {
+		font-size: 6vw;
+	}
 
 	h1 {
-		font: normal 4vw "Favourit", sans-serif;
-		color: #FF5B45;
-		padding: 0;
-		margin: 0;
+		font-size: 20vw;
 	}
 
-	h2 {
-		font: normal 20vw "Love", sans-serif;
-		color: #A0D5BB;
-		margin: 0;
-		padding: 0;
-	}
-
-	.Header {
-	grid-column-start: 1;
-	grid-column-end: 6;
+	h3 {
+		font-size: 10vw;
 	}
 
 	.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	padding: 4vw 3vw 2rem 3vw;
+		padding: 4vw 3vw 3vw 3vw;
 	}
 
 	.Main {
-	margin: 0 0 0 0;
+		margin: 40vh 0 0 0;
 	}
 
 	.Names {
-	margin: 2rem 0 0 0;
-	grid-column-start: 1;
-	grid-column-end: 6;
+		grid-column-start: 1;
+		grid-column-end: 6;
 	}
 
 	.Blurb {
-	margin: 5rem 0 0 0;
-	grid-column-start: 1;
-	grid-column-end: 6;
+		margin: 5rem 0 0 0;
+		grid-column-start: 1;
+		grid-column-end: 6;
 	}
 
+	/* Artist Menu General */
+
+	.artistItem {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-content: center;
+		margin: 0;
+	}
+
+	.artistItem img {
+		width: 100%;
+		height: auto;
+	}
+
+	.artistTitle {
+		margin: 0rem 0rem 0rem 2rem;		
+	}
+
+	.artistInfo {
+		margin: 1rem 0 1rem 2rem;
+	}
+
+	.artistName {
+		margin: 0;
+	}
+
+	.artistTitle {
+		margin: 0;
+	}
+
+	/* Artist Item Positions */
+
+	.artistLeft {
+		grid-column-start: 1;
+		grid-column-end: 6;
+	}
+
+	.artistLeft * {
+		flex-flow: column;
+	}
+
+	.artistLeft .artistInfo {
+		margin: 1rem 0 1rem 2rem;
+	}
+
+	.artistMiddle {
+		grid-column-start: 1;
+		grid-column-end: 6;
+	}
+
+	.artistMiddle .artistItem {
+		justify-content: center;
+		align-content: center;
+		align-items: stretch;
+	}
+
+	.artistMiddle .artistInfo * {
+		margin: 0 0 0 0;
+		text-align: left;
+	}
+
+	.artistMiddle .artistInfo {
+		margin: 1rem 0 1rem 2rem;
+		text-align: left;
+	}
+
+	.artistRight {
+		grid-column-start: 1;
+		grid-column-end: 6;
+	}
+
+	.artistRight .artistItem {
+		flex-flow: column;
+		justify-content: flex-start;
+	}
+
+	.artistRight .artistItem * {
+		text-align: left;
+	}
+
+	.artistRight .artistThumbnail {
+		margin: 0 0 0 0rem;
+	}
+
+/*Footer*/
 	.Footer {
-	grid-column-start: 1;
-	grid-column-end: 6;
-	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
-	margin: 50vh 1rem 1rem 1rem;
+		margin: 50vh 1rem 0 1rem;
+	}
+
+	.Footer img {
+		width: 30vw; 
+		height: auto;
+		align-self: center;
+		margin: 0 1rem 0 0;
 	}
 
 	.Mobile {
@@ -475,43 +546,37 @@ animation: fadeIn ease 0.5s;
 	}
 
 	.Tablet {
-	display: block;
+		display: block;
+	}
+
+	.Desktop {
+		display: none;
 	}
 }
 
 @media all and (max-width: 1100px) and (min-width: 800px)  {
- 
-  body {
-	height: 100%;
-	color: red;
-	margin: 0;
-/*	background-color: lightgreen;
-*/	overflow: auto;
+
+	h2, h4, p {
+		font-size: 2rem;
 	}
 
 	h1 {
-		font: normal 2rem "Favourit", sans-serif;
-		color: #FF5B45;
-		padding: 0;
-		margin: 0;
+		font-size: 17vw;
 	}
 
-	h2 {
-		font: normal 17vw "Love", sans-serif;
-		color: #A0D5BB;
-		margin: 0;
-		padding: 0;
+	h3 {
+		font-size: 10vw;
 	}
 
 	.Header {
-	grid-column-start: 1;
-	grid-column-end: 6;
+		grid-column-start: 1;
+		grid-column-end: 6;
 	}
 
 	.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	padding: 2rem 2rem 2rem 2rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+		padding: 2rem 2rem 2rem 2rem;
 	}
 
 	.Mobile {
@@ -519,7 +584,11 @@ animation: fadeIn ease 0.5s;
 	}
 
 	.Tablet {
-	display: block;
+		display: block;
+	}
+
+	.Desktop {
+		display: block;
 	}
 }
 
