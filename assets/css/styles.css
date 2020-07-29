@@ -105,7 +105,7 @@ h2 {
 .parallax {
 	perspective: 1px;
 	height: 100%;
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 	overflow-y: auto;	
 }
 
@@ -148,11 +148,11 @@ h2 {
 .artistItem {
 	display: flex;
 	flex-flow: row;
-	margin: 0rem 0 0 0;
+	margin: 5rem 0 5rem 0;
 }
 
 .artistItem img {
-	width: 30vw;
+	height: 30vh;
 }
 
 .artistThumbnail {
@@ -160,10 +160,11 @@ h2 {
 }
 
 .artistInfo {
-	margin: 0 0 0 0;
+	margin: 0 0 1rem 0;
 }
 
 .artistName {
+	margin: 0 0 0.5rem 0;
 }
 
 .artistTitle {
@@ -181,31 +182,46 @@ h2 {
 }
 
 .artistLeft * {
-	flex-flow: column;
+	flex-flow: row;
 	text-align: left;
+}
+
+.artistLeft .artistInfo {
+	margin: 0 0 0 1rem;
 }
 
 .artistMiddle {
 	grid-column-start: 1;
-	grid-column-end: 6;
+	grid-column-end: 5;
 }
 
-.artistMiddle * {
+.artistMiddle .artistItem {
 	flex-flow: column;
+	align-items: flex-end;
 	text-align: right;
 }
 
+.artistMiddle .artistInfo {
+	margin: 1rem 0 0 0;
+}
+
 .artistRight {
+	grid-column-start: 1;
 	grid-column-end: 6;
 }
 
 .artistRight .artistItem {
 	flex-flow: row;
-	text-align: right;
+	justify-content: flex-end;
 }
 
 .artistRight .artistItem * {
-	text-align: right;
+	text-align: right;	
+}
+
+.artistRight .artistThumbnail {
+	margin: 0 0 0 1rem;
+
 }
 
 /*Artist Page*/
@@ -359,7 +375,8 @@ animation: fadeIn ease 0.5s;
 
 /* Mobile */
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
+
   body {
     background-color: lightblue;
   }
@@ -415,14 +432,18 @@ animation: fadeIn ease 0.5s;
 	}
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
+@media all and (max-width: 1100px) and (min-width: 800px)  {
  
   body {
-    background-color: lightgreen;
-  }
+	height: 100%;
+	color: red;
+	margin: 0;
+	background-color: lightgreen;
+	overflow: auto;
+	}
 
 	h1 {
-		font: normal 2.5em "Favourit", sans-serif;
+		font: normal 2rem "Favourit", sans-serif;
 		color: #FF5B45;
 		padding: 0;
 		margin: 0;
@@ -443,7 +464,7 @@ animation: fadeIn ease 0.5s;
 	.grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	padding: 2rem 0 2rem 0;
+	padding: 2rem 2rem 2rem 2rem;
 	}
 
 }
