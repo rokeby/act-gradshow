@@ -9,6 +9,11 @@ body {
 	margin: 0;
 	background-color: #000;
 	overflow: auto;
+
+}
+
+.FO, .Matt {
+ 	overflow-x: hidden;
 }
 
 .FO a {
