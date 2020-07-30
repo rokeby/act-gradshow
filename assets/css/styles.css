@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: line-through;
 }
 
 /*Big LOVE Titles*/
@@ -129,8 +129,7 @@ p {
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
-/*	background-image: url("../img/bg/tree.jpg");
-	background-repeat: repeat-y;	*/
+	scroll-behavior: smooth;
 }
 
 .parallax__layer {
@@ -145,6 +144,7 @@ p {
 	transform: translateZ(-1px) scale(2);
 /*	background-image: url("../img/bg-back.png");*/	
 	/*border: 2px yellow solid;*/
+	pointer-events: none;
 }
 
 .parallax__layer--base img {
@@ -324,7 +324,7 @@ p {
 .Portal {
 	grid-column-start: 3;
 	grid-column-end: 6;
-	margin-top: 50vh;
+	margin: 50vh 0 50vh 0;
 	text-align: center;
 	/*border: 1px white solid;*/
 }
@@ -432,7 +432,7 @@ p {
 	}
 
 	.Main {
-		margin: 40vh 0 0 0;
+		margin: 50vh 0 0 0;
 	}
 
 	.Names {
@@ -441,9 +441,9 @@ p {
 	}
 
 	.Blurb {
-		margin: 5rem 0 0 0;
 		grid-column-start: 1;
 		grid-column-end: 6;
+		margin-bottom: 50vh;
 	}
 
 	/* Artist Menu General */

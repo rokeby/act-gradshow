@@ -1,19 +1,12 @@
-// function myfunction () {
-//     $("#parallax").animate(0, 0);
-//     	console.log("hell0");
+console.log(top.location.pathname)
+
+// if (top.location.pathname !== '/my/path')
+// {
+// 		$(".Heading").click( function() {
+// 			console.log("hell0")
+// 			$(".parallax").animate({
+// 				scrollTop: $(".Work").offset().top + -20
+// 			}, 300);
+// 		});
 // }
-
-
-
-// $('.parallax').scroll(function() {
-// 	x = $('.parallax').scrollTop();
-// 		  console.log(x);	
-// 	if (x > 1400) {
-// 		myfunction()
-// 	}
-
-// })
-
-
-
 

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 	
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 </head>
 
@@ -34,7 +34,7 @@
 					<h2 class="Header Superheading">
 						<a href="http://act.mit.edu/">MIT Program in Art, Culture and Technology</a>
 					</h2>
-					<h1 class="Header Heading">who feels at home in the visible world?</h1>
+					<h1 id="Head" class="Header Heading">who feels at home in the visible world?</h1>
 					<div class="Main Names">
 						<h2><a href="casey-tang/">Casey Tang</a></h2>
 						<h2><a href="luiza-bastos-lages">Luíza Bastos Lages</a></h2>
@@ -89,7 +89,7 @@
 									<a href="luiza-bastos-lages">Luíza Bastos Lages</a>
 								</h2>
 								<h3 class="artistTitle">
-									<a href="luiza-bastos-lages">lavada pelo Ma</a>
+									<a href="luiza-bastos-lages">lavada pelo marr</a>
 								</h3>
 							</div>
 						</div>
@@ -237,6 +237,10 @@
 						</div>
 					</div>
 
+					<div class="Portal">
+						<img src="assets/img/portal.jpg">
+					</div>
+
 					<div class="Footer">
 						<a href="http://mit.edu"><a href="http://mit.edu"><a href="http://mit.edu"><img src="assets/img/MIT_logo.svg"></a></a></a> 
 						<a href="http://act.mit.edu"><img src="assets/img/act_red_rgb_RZ.png"></a> 
@@ -256,6 +260,23 @@
 	</div>
 
 	<script src="assets/js/scripts.js"></script>
+	
+	<script>
 
+		$(".Portal").click( function() {
+			console.log("hell0")
+			$(".parallax").animate({
+				scrollTop: '0px'
+			}, 300);
+		})
+
+		$(".Heading").click( function() {
+			console.log("hell0")
+			$(".parallax").animate({
+				scrollTop: $(".Main").offset().top + -20
+			}, 300);
+		})
+
+	</script>
 </body>
 </html>
