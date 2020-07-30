@@ -74,7 +74,7 @@ p {
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	padding: 2rem 4rem 0rem 4rem;
+	padding: 2rem 2rem 2rem 2rem;
 }
 
 /*Header*/
@@ -117,7 +117,7 @@ p {
 	flex-flow: row;
 	justify-content: flex-start;
 	align-items: center;
-	margin: 7vh 0rem 1rem 0rem;
+	margin: 7vh 0rem 0rem 0rem;
 }
 
 .Footer img {
