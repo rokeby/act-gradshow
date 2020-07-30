@@ -304,13 +304,13 @@ p {
 	margin-bottom: 50vh;
 	grid-column-start: 1;
 	grid-column-end: 6;
-	width: 40vw;
+	width: 60vw;
 }
 
 .imageR {
 	margin-bottom: 50vh;
 	grid-column-end: 6;
-	width: 40vw;
+	width: 60vw;
 }
 
 .Statement {
@@ -326,7 +326,6 @@ p {
 	grid-column-end: 6;
 	margin: 50vh 0 50vh 0;
 	text-align: center;
-	/*border: 1px white solid;*/
 }
 
 .Portal img {
@@ -545,12 +544,10 @@ p {
 
 	.imageL {
 		width: 70vw;
-		/*border: white 1px solid;*/
 	}
 
 	.imageR {
 		width: 70vw;
-		/*border: white 1px solid;*/
 	}
 	
 
