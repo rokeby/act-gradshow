@@ -8,7 +8,6 @@ body {
 	height: 100%;
 	margin: 0;
 	background-color: #000;
-	overflow: auto;
 }
 
 a {
@@ -21,27 +20,25 @@ a:hover {
 }
 
 /*Big LOVE Titles*/
-h1 {
-	font: normal 13vw "Love", sans-serif;
-	line-height: 95%;
+
+h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
 }
+
+h1 {
+	font: normal 13vw/95% "Love", sans-serif;
+}
+
 /*Artist Names and Links to Works*/
 
 h2 {
-	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
-	line-height: 120%
+	font: normal normal normal 2.4rem/120% "Helvetica", sans-serif;
 }
 
 /* Small LOVE names of works*/
 h3 {
 	font: normal 8vw/100% "Love", sans-serif;
-	text-align: left;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;	
 }
 
 h3 a:hover {
@@ -52,8 +49,7 @@ h3 a:hover {
 h4 {
 	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
 	padding: 0;
-	margin: 0 0 2rem 0;	
-	line-height: 110%
+	margin-bottom: 2rem;	
 }
 
 /*Body Text*/
@@ -61,20 +57,19 @@ p {
 	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
 	padding: 0;
 	margin-top: 0;
-	line-height: 110%
 }
 
 .backArrow {
+	font-size: 4rem;
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-size: 4rem;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	padding: 2rem 2rem 2rem 2rem;
+	padding: 2rem;
 }
 
 /*Header*/
@@ -85,7 +80,7 @@ p {
 }
 
 .Superheading {
-	margin: 0vh 1vh 0vh 1vh;
+	margin: 0vh 0 0vh 1vh;
 }
 
 .Heading {
@@ -95,7 +90,7 @@ p {
 /*Main*/
 
 .Main {
-	margin: 50vh 1vh 5vh 1vh;
+	margin: 50vh 4vh 0vh 1vh;
 }
 
 .Names {
@@ -117,14 +112,13 @@ p {
 	flex-flow: row;
 	justify-content: flex-start;
 	align-items: center;
-	margin: 7vh 0rem 0rem 0rem;
+	margin-top: 7vh;
 }
 
 .Footer img {
 	width: 10vw; 
 	height: auto;
-	align-self: center;
-	margin: 0 4rem 0 0;
+	margin-right: 4rem;
  }
 
 
@@ -187,15 +181,15 @@ p {
 }
 
 .artistThumbnail {
-	margin: 0 0rem 0 0rem;
+	margin: 0;
 }
 
 .artistInfo {
-	margin: 0 0 1rem 0;
+	margin-bottom: 1rem;
 }
 
 .artistName {
-	margin: 0 0 0.5rem 0;
+	margin-bottom: 0.5rem;
 }
 
 
@@ -257,7 +251,7 @@ p {
 	grid-column-start: 1;
 	grid-column-end: 6;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	margin: 50vh 0 0 0;
+	margin-top: 50vh;
 }
 
 .Work iframe {
@@ -283,7 +277,7 @@ p {
 }
 
 .imageWrapper {
-	margin: 0 0 0 0;
+	margin: 0;
 	grid-column-start: 1;
 	grid-column-end: 6;
 	text-align: center;
@@ -307,22 +301,20 @@ p {
 }
 
 .imageL {
-	margin: 0 0 50vh 0;
+	margin-bottom: 50vh;
 	grid-column-start: 1;
 	grid-column-end: 6;
 	width: 40vw;
-	/*border: white 1px solid;*/
 }
 
 .imageR {
-	margin: 0 0 50vh 0;
+	margin-bottom: 50vh;
 	grid-column-end: 6;
 	width: 40vw;
-	/*border: white 1px solid;*/
 }
 
 .Statement {
-	margin: 50vh 0 0 0;
+	margin-top: 50vh;
 	grid-column-start: 1;
 	grid-column-end: 4;
 	/*border-radius: 100%;*/
@@ -332,7 +324,7 @@ p {
 .Portal {
 	grid-column-start: 3;
 	grid-column-end: 6;
-	margin: 50vh 0 0 0;
+	margin-top: 50vh;
 	text-align: center;
 	/*border: 1px white solid;*/
 }
@@ -343,7 +335,7 @@ p {
 }
 
 .Bio {
-	margin: 50vh 0 0 0;
+	margin-top: 50vh;
 	grid-column-start: 3;
 	grid-column-end: 6;
 }
@@ -354,7 +346,7 @@ p {
 	position: relative;
 	grid-column-start: 1;
 	grid-column-end: 6;
-	margin: 50vh 0 0 0;
+	margin-top: 50vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -552,13 +544,13 @@ p {
 	}
 
 	.imageL {
-	width: 70vw;
-	/*border: white 1px solid;*/
+		width: 70vw;
+		/*border: white 1px solid;*/
 	}
 
 	.imageR {
-	width: 70vw;
-	/*border: white 1px solid;*/
+		width: 70vw;
+		/*border: white 1px solid;*/
 	}
 	
 
@@ -570,8 +562,7 @@ p {
 	.Footer img {
 		width: 30vw; 
 		height: auto;
-		align-self: center;
-		margin: 0 1rem 0 0;
+		margin-right: 1rem;
 	}
 
 	.Mobile {
@@ -589,25 +580,13 @@ p {
 
 @media all and (max-width: 1100px) and (min-width: 800px)  {
 
-	h2, h4, p {
-	}
-
 	h1 {
 		font-size: 18vw;
-	}
-
-	h3 {
 	}
 
 	.Header {
 		grid-column-start: 1;
 		grid-column-end: 6;
-	}
-
-	.grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-		padding: 2rem 2rem 2rem 2rem;
 	}
 
 	.Mobile {
