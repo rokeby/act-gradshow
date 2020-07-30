@@ -1,4 +1,4 @@
-if (top.location.pathname !== '/act-gradshow/index.html')
+if (top.location.pathname !== '/act-gradshow/')
 {
 		$(".Heading").click( function() {
 		console.log("Go to Work!")
@@ -13,7 +13,7 @@ if (top.location.pathname !== '/act-gradshow/index.html')
 		console.log("clicked portal!")
 		$(".parallax").animate({
 			scrollTop: '0px'
-		}, 300);
+		}, 600);
 		});
 
 		$(".Heading").click( function() {
