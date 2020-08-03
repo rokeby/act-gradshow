@@ -19,6 +19,10 @@ a:hover {
 	text-decoration: line-through;
 }
 
+a:focus {
+	outline: none;
+}
+
 /*Big LOVE Titles*/
 
 h1, h2, h3, h4 {
@@ -143,7 +147,6 @@ p {
 .parallax__layer--base {
 	transform: translateZ(-1px) scale(2);
 /*	background-image: url("../img/bg-back.png");*/	
-	/*border: 2px yellow solid;*/
 	pointer-events: none;
 }
 
@@ -154,14 +157,12 @@ p {
 
 .parallax__layer--back {
 	transform: translateZ(0) scale(1);
-	/*border: 2px pink solid;*/
 }
 
 
 .parallax__layer--deep {
 	transform: translateZ(-2px) scale(3);
 	pointer-events: none;
-	/*border: 2px green solid;*/
 }
 
 .parallax__layer--deep img {
@@ -309,16 +310,37 @@ p {
 
 .imageR {
 	margin-bottom: 50vh;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	width: 60vw;
+	justify-self: end;
+}
+
+.imageL img {
+	width: 100%
+}
+
+.imageR img {
+	width: 100%
+}
+
+/*.imageL * {
+	margin-bottom: 50vh;
+	grid-column-start: 1;
 	grid-column-end: 6;
 	width: 60vw;
 }
+
+.imageR * {
+	margin-bottom: 50vh;
+	grid-column-end: 6;
+	width: 60vw;
+}*/
 
 .Statement {
 	margin-top: 50vh;
 	grid-column-start: 1;
 	grid-column-end: 4;
-	/*border-radius: 100%;*/
-	/*border: 1px solid white;*/
 }
 
 .Portal {
