@@ -178,7 +178,8 @@ p {
 }
 
 .artistItem img {
-	height: 50vh;
+	max-height: 50vh;
+	max-width: 40vw;
 }
 
 .artistThumbnail {
