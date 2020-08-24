@@ -95,10 +95,7 @@ p {
 } 
 
 #countdown {
-	position: absolute;
-	bottom: 3vw;
-	right: 3vw;
-	text-align: right;
+text-align: right;
 }
 
 #mobileCountdown {
@@ -108,20 +105,18 @@ p {
 	text-align: right;
 }
 
-
-/*
-.textdate {
-	display: none;
-	text-align: right;
+#mobileDate {
+	position: absolute;
+	bottom: 3vw;
+	left: 3vw;
+	text-align: left;
 }
 
-.date:hover {
-	display: none;
-}
-
-.date:hover + .textdate {
-	display: block;
-}*/
+#date {
+	position: absolute;
+	bottom: 3vw;
+	right: 3vw;
+	text-align: right;}
 
 /*Main*/
 
