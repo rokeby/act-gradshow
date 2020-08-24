@@ -84,12 +84,44 @@ p {
 }
 
 .Superheading {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 	margin: 0vh 0 0vh 1vh;
 }
 
 .Heading {
 	min-height: 50vh;
 } 
+
+#countdown {
+	position: absolute;
+	bottom: 3vw;
+	right: 3vw;
+	text-align: right;
+}
+
+#mobileCountdown {
+	position: absolute;
+	bottom: 3vw;
+	right: 3vw;
+	text-align: right;
+}
+
+
+/*
+.textdate {
+	display: none;
+	text-align: right;
+}
+
+.date:hover {
+	display: none;
+}
+
+.date:hover + .textdate {
+	display: block;
+}*/
 
 /*Main*/
 
@@ -132,7 +164,7 @@ p {
 	perspective: 1px;
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -576,7 +608,7 @@ p {
 
 /*Footer*/
 	.Footer {
-		margin: 16vh 1rem 0 1rem;
+		margin: 0vh 1rem 0 1rem;
 	}
 
 	.Footer img {
