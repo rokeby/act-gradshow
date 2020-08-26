@@ -10,6 +10,23 @@ body {
 	background-color: #000;
 }
 
+/* LANDING PAGE */
+
+.landing .Superheading {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 0vh 0 0vh 1vh;
+}
+
+.landing .parallax {
+	perspective: 1px;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+}
+
 a {
 	text-decoration: none;
 	color: #FFF;
@@ -53,7 +70,7 @@ h3 a:hover {
 h4 {
 	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
 	padding: 0;
-	margin-bottom: 2rem;	
+	margin-bottom: 2rem;
 }
 
 /*Body Text*/
@@ -72,7 +89,7 @@ p {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	padding: 2rem;
 }
 
@@ -86,13 +103,13 @@ p {
 .Superheading {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin: 0vh 0 0vh 1vh;
 }
 
 .Heading {
 	min-height: 50vh;
-} 
+}
 
 #countdown {
 text-align: right;
@@ -147,7 +164,7 @@ text-align: right;
 }
 
 .Footer img {
-	width: 10vw; 
+	width: 10vw;
 	height: auto;
 	margin-right: 4rem;
  }
@@ -159,7 +176,7 @@ text-align: right;
 	perspective: 1px;
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: auto;
 	scroll-behavior: smooth;
 }
 
@@ -173,7 +190,7 @@ text-align: right;
 
 .parallax__layer--base {
 	transform: translateZ(-1px) scale(2);
-/*	background-image: url("../img/bg-back.png");*/	
+/*	background-image: url("../img/bg-back.png");*/
 	pointer-events: none;
 }
 
@@ -265,7 +282,7 @@ text-align: right;
 }
 
 .artistRight .artistItem * {
-	text-align: right;	
+	text-align: right;
 }
 
 .artistRight .artistThumbnail {
@@ -285,7 +302,7 @@ text-align: right;
 
 .Work iframe {
 	grid-column-start: 1;
-	grid-column-end: 6;	
+	grid-column-end: 6;
 	height: 100vh;
 }
 
@@ -334,22 +351,43 @@ text-align: right;
 	grid-column-start: 1;
 	grid-column-end: 6;
 	width: 60vw;
+	max-height: 90vh;
+	/* max-height: 80vh; */
 }
 
 .imageR {
 	margin-bottom: 50vh;
 	grid-column-start: 1;
 	grid-column-end: 6;
-	width: 60vw;
+	max-width: 70vw;
+	max-height: 90vh;
 	justify-self: end;
 }
 
 .imageL img {
-	width: 100%
+	width: auto;
+	max-height: inherit;
+	max-width: inherit;
 }
 
 .imageR img {
-	width: 100%
+	width: auto;
+	max-height: inherit;
+	max-width: inherit;
+	float: right;
+}
+
+.imageL a {
+	width: auto;
+	max-height: inherit;
+	max-width: inherit;
+}
+
+.imageR a {
+	width: auto;
+	max-height: inherit;
+	max-width: inherit;
+	float: right;
 }
 
 /*.imageL * {
@@ -511,7 +549,7 @@ text-align: right;
 	}
 
 	.artistTitle {
-		margin: 0rem 0rem 0rem 2rem;		
+		margin: 0rem 0rem 0rem 2rem;
 	}
 
 	.artistInfo {
@@ -599,7 +637,7 @@ text-align: right;
 	.imageR {
 		width: 70vw;
 	}
-	
+
 
 /*Footer*/
 	.Footer {
@@ -607,7 +645,7 @@ text-align: right;
 	}
 
 	.Footer img {
-		width: 30vw; 
+		width: 30vw;
 		height: auto;
 		margin-right: 1rem;
 	}
@@ -648,6 +686,3 @@ text-align: right;
 		display: block;
 	}
 }
-
-
-
