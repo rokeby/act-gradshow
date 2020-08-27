@@ -344,6 +344,7 @@ text-align: right;
 	margin: 0 0 50vh 0;
 	max-width: 100%;
 	text-align: center;
+	max-height: 90vh;
 }
 
 .imageL {
