@@ -141,9 +141,14 @@ text-align: right;
 	margin: 50vh 4vh 0vh 1vh;
 }
 
-.Names {
+.Home.Names {
 	grid-column-start: 1;
 	grid-column-end: 3;
+}
+
+.Names {
+	grid-column-start: 1;
+	grid-column-end: 4;
 }
 
 .Blurb {

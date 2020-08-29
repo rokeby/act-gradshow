@@ -10,10 +10,10 @@ $( window ).on('load', function() {
 
 		$('.parallax').scroll(function() {
 			x = $('.parallax').scrollTop();
-		  console.log("scrollTop: " + x);
+		  // console.log("scrollTop: " + x);
 			if (x > pageEnd) {
 				$('.parallax').scrollTop(pageEnd )
-				console.log("the end is here")
+				// console.log("the end is here")
 			}});
 	},1000)
 
@@ -29,7 +29,7 @@ $( window ).ready( function() {
 	//
 	// console.log("waaa " + fore.length)
 
-	for (var i = 0; i < 4; i++) {
+	for (var i = 0; i < 6; i++) {
 		$('.parallax__layer--base').append(bg[Math.floor(Math.random()* bg.length)])
 		$('.parallax__layer--deep').append(fore[Math.floor(Math.random()* fore.length)])
 	}
