@@ -190,7 +190,8 @@ text-align: right;
 
 .parallax__layer--base {
 	transform: translateZ(-1px) scale(2);
-/*	background-image: url("../img/bg-back.png");*/
+	background-image: url("../img/bg/tree.gif");
+	background-repeat: repeat-y;
 	pointer-events: none;
 }
 
@@ -201,6 +202,7 @@ text-align: right;
 
 .parallax__layer--back {
 	transform: translateZ(0) scale(1);
+	z-index: 100;
 }
 
 

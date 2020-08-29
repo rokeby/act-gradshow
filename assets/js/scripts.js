@@ -1,4 +1,8 @@
-if (top.location.pathname !== '/act-gradshow/')
+
+var x = top.location.pathname
+
+if (x !== '/')
+
 {
 		$(".Heading").click( function() {
 		console.log("Go to Work!")
@@ -7,14 +11,8 @@ if (top.location.pathname !== '/act-gradshow/')
 			}, 300);
 		});
 }
- else {
 
-		$(".Portal").click( function() {
-		console.log("clicked portal!")
-		$(".parallax").animate({
-			scrollTop: '0px'
-		}, 600);
-		});
+ else {
 
 		$(".Heading").click( function() {
 		console.log("Go to Main!")
@@ -23,4 +21,3 @@ if (top.location.pathname !== '/act-gradshow/')
 			}, 300);
 		})
 }
-
