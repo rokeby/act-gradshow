@@ -17,6 +17,8 @@ $( window ).on('load', function() {
 			}
 		})
 
+		$( '.Emma-Overlay' ).click();
+
 	},1000)
 
 })
@@ -45,9 +47,9 @@ if (x == "/emma-yimeng-zhu/") {
 	var video4 = new Vimeo.Player($('#video4'));
 
 	$( '.Emma-Overlay' ).click( function() {
-				video1.play()
-				video2.play()
-				video3.play()
-				video4.play()
+				video1.setVolume(1)
+				video2.setVolume(1)
+				video3.setVolume(1)
+				video4.setVolume(1)
 })
 }
