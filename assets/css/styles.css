@@ -509,7 +509,7 @@ text-align: right;
 	display: none;
 }
 
-/* Mobile */
+/* Mobile *//* Mobile *//* Mobile *//* Mobile *//* Mobile *//* Mobile *//* Mobile *//* Mobile */
 
 @media all and (max-width: 800px) {
 
@@ -523,7 +523,7 @@ text-align: right;
 	}
 
 	h3 {
-		font-size: 8vh;
+		font-size: 6.5vh;
 	}
 
 	.grid-container {
@@ -566,7 +566,7 @@ text-align: right;
 	}
 
 	.artistInfo {
-		margin: 1rem 0 1rem 2rem;
+		margin: 1rem 0 1rem 0rem;
 	}
 
 	.artistName {
@@ -589,7 +589,7 @@ text-align: right;
 	}
 
 	.artistLeft .artistInfo {
-		margin: 1rem 0 1rem 2rem;
+		margin: 1rem 0 1rem 0rem;
 	}
 
 	.artistMiddle {
@@ -609,7 +609,7 @@ text-align: right;
 	}
 
 	.artistMiddle .artistInfo {
-		margin: 1rem 0 1rem 2rem;
+		margin: 1rem 0 1rem 0rem;
 		text-align: left;
 	}
 
@@ -644,11 +644,13 @@ text-align: right;
 	}
 
 	.imageL {
-		width: 70vw;
+		width: 80vw;
+		max-width: 80vw;
 	}
 
 	.imageR {
-		width: 70vw;
+		width: 80vw;
+		max-width: 80vw;
 	}
 
 
