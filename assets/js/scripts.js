@@ -1,20 +1,24 @@
-$( document ).ready( function() {
+$( window ).on('load', function() {
 
-	footerPos = $('.Footer').position().top;
-	pageEnd = footerPos + ($('.Footer').height()*2) - $(window).height();
-			console.log("Footer at: " + footerPos)
-			console.log("viewPort at: " + $(window).height())
-			console.log("pageEnd at: " + pageEnd)
+	setTimeout( function() {
 
-	$('.parallax').scroll(function() {
-		x = $('.parallax').scrollTop();
-	  // console.log("scrollTop: " + x);
-		if (x > pageEnd) {
-			$('.parallax').scrollTop(pageEnd)
-			// console.log("the end is here")
-		} else {
-		}
-	})
+		footerPos = $('.Footer').position().top;
+		pageEnd = footerPos + ($('.Footer').height()*2) - $(window).height();
+				console.log("Footer at: " + footerPos)
+				console.log("viewPort at: " + $(window).height())
+				console.log("pageEnd at: " + pageEnd)
+
+		$('.parallax').scroll(function() {
+			x = $('.parallax').scrollTop();
+		  console.log("scrollTop: " + x);
+			if (x > pageEnd) {
+				$('.parallax').scrollTop(pageEnd )
+				console.log("the end is here")
+			}
+		})
+
+	},1000)
+
 })
 
 var x = top.location.pathname;
