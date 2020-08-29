@@ -45,7 +45,7 @@ h3 {
 	font: normal 8vw "Love", sans-serif;
 	text-align: left;
 	margin: 0 0 0 0;
-	padding: 0 0 0 0;	
+	padding: 0 0 0 0;
 }
 
 h3 a:hover {
@@ -56,7 +56,7 @@ h3 a:hover {
 h4 {
 	font: normal 2.4rem "Favourit", sans-serif;
 	padding: 0;
-	margin: 0 0 2rem 0;	
+	margin: 0 0 2rem 0;
 }
 
 /*Body Text*/
@@ -74,7 +74,7 @@ h4 {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	padding: 2rem 4rem 2rem 4rem;
 }
 
@@ -91,7 +91,7 @@ h4 {
 
 .Heading {
 	min-height: 50vh;
-} 
+}
 
 /*Main*/
 
@@ -170,7 +170,7 @@ h4 {
 }
 
 .Footer img {
-	width: 10vw; 
+	width: 10vw;
 	height: auto;
 	align-self: center;
 	margin: 0 4rem 0 0;
@@ -183,7 +183,7 @@ h4 {
 	perspective: 1px;
 	height: 100%;
 	/*overflow-x: hidden;*/
-	overflow-y: auto;	
+	overflow-y: auto;
 }
 
 .parallax__layer {
@@ -196,7 +196,7 @@ h4 {
 
 .parallax__layer--base {
 	transform: translateZ(-1px) scale(3);
-/*	background-image: url("../img/bg-back.png");*/	
+/*	background-image: url("../img/bg-back.png");*/
 	/*border: 2px yellow solid;*/
 }
 
@@ -353,7 +353,7 @@ table, th, td {
 	width: 70vw;
 	/*border: white 1px solid;*/
 	}
-	
+
 .Matt p {
 	text-align: center;
 	margin: 75px;
@@ -384,11 +384,11 @@ tr {
 
 /*Footer*/
 	.Footer {
-		margin: 16vh 1rem 0 1rem;
+		margin: 16vh 1rem 0 0rem;
 	}
 
 	.Footer img {
-		width: 30vw; 
+		width: 30vw;
 		height: auto;
 		align-self: center;
 		margin: 0 1rem 0 0;
@@ -426,7 +426,7 @@ tr {
 
 	.grid-container {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		padding: 2rem 2rem 2rem 2rem;
 	}
 
