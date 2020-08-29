@@ -17,7 +17,6 @@ $( window ).on('load', function() {
 			}});
 	},1000)
 
-
 })
 
 // Randomise bg

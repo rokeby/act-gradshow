@@ -558,6 +558,7 @@ text-align: right;
 	.artistItem img {
 		width: 100%;
 		height: auto;
+		max-width: 100vw;
 	}
 
 	.artistTitle {
