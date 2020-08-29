@@ -17,8 +17,6 @@ $( window ).on('load', function() {
 			}
 		})
 
-		$( '.Emma-Overlay' ).click();
-
 	},1000)
 
 })
@@ -40,16 +38,24 @@ if (x !== '/') {
 		})
 }
 
-if (x == "/emma-yimeng-zhu/") {
+// if (x == "/emma-yimeng-zhu/") {
 	var video1 = new Vimeo.Player($('#video1'));
 	var video2 = new Vimeo.Player($('#video2'));
 	var video3 = new Vimeo.Player($('#video3'));
 	var video4 = new Vimeo.Player($('#video4'));
 
-	$( '.Emma-Overlay' ).click( function() {
+	$( '.parallax' ).click( function() {
 				video1.setVolume(1)
 				video2.setVolume(1)
 				video3.setVolume(1)
 				video4.setVolume(1)
 })
-}
+//}
+
+// $('#video1, #video2, #video3, #video4').on('load', function() {
+//
+// 	setTimeout( function() {
+// 		console.log("all loaded")
+// 		$( '.Emma-Overlay' ).click();
+// 	}, 1000)
+// })
