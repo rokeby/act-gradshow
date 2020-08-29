@@ -1,19 +1,31 @@
+$( document ).ready( function() {
 
-var x = top.location.pathname
+	footerPos = $('.Footer').position().top;
+	pageEnd = footerPos + ($('.Footer').height()*2) - $(window).height();
+			console.log("Footer at: " + footerPos)
+			console.log("viewPort at: " + $(window).height())
+			console.log("pageEnd at: " + pageEnd)
 
-if (x !== '/')
+	$('.parallax').scroll(function() {
+		x = $('.parallax').scrollTop();
+	  // console.log("scrollTop: " + x);
+		if (x > pageEnd) {
+			$('.parallax').scrollTop(pageEnd)
+			// console.log("the end is here")
+		} else {
+		}
+	})
+})
 
-{
+var x = top.location.pathname;
+if (x !== '/') {
 		$(".Heading").click( function() {
 		console.log("Go to Work!")
 			$(".parallax").animate({
 				scrollTop: $(".Work").offset().top + -20
 			}, 300);
 		});
-}
-
- else {
-
+} else {
 		$(".Heading").click( function() {
 		console.log("Go to Main!")
 				$(".parallax").animate({
@@ -21,3 +33,21 @@ if (x !== '/')
 			}, 300);
 		})
 }
+
+if (x == "/Users/zhexi/Documents/Websites/act-gradshow/emma-yimeng-zhu/index.html") {
+	var video1 = new Vimeo.Player($('#video1'));
+	var video2 = new Vimeo.Player($('#video2'));
+	var video3 = new Vimeo.Player($('#video3'));
+	var video4 = new Vimeo.Player($('#video4'));
+
+	$( '.Emma-Overlay' ).click( function() {
+				video1.play()
+				video2.play()
+				video3.play()
+				video4.play()
+})
+}
+
+// setTimeout( function() {
+// 	$('.Emma-Video').click()
+// }, 1000)
