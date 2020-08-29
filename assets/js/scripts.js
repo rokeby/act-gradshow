@@ -38,7 +38,7 @@ if (x !== '/') {
 		})
 }
 
-if (x == "/emma-yimeng-zhu") {
+if (x == "/emma-yimeng-zhu/") {
 	var video1 = new Vimeo.Player($('#video1'));
 	var video2 = new Vimeo.Player($('#video2'));
 	var video3 = new Vimeo.Player($('#video3'));
