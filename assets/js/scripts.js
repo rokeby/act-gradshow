@@ -34,7 +34,7 @@ if (x !== '/') {
 		})
 }
 
-if (x == "/Users/zhexi/Documents/Websites/act-gradshow/emma-yimeng-zhu/index.html") {
+if (x == "/emma-yimeng-zhu") {
 	var video1 = new Vimeo.Player($('#video1'));
 	var video2 = new Vimeo.Player($('#video2'));
 	var video3 = new Vimeo.Player($('#video3'));
@@ -47,7 +47,3 @@ if (x == "/Users/zhexi/Documents/Websites/act-gradshow/emma-yimeng-zhu/index.htm
 				video4.play()
 })
 }
-
-// setTimeout( function() {
-// 	$('.Emma-Video').click()
-// }, 1000)
