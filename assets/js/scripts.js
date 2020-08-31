@@ -25,15 +25,10 @@ $( window ).ready( function() {
 	var bg = ["<img src='/assets/img/bg/tree2.jpg'/>","<img src='/assets/img/bg/tree3.jpg'/>","<img src='/assets/img/bg/tree4.jpg'/>","<img src='/assets/img/bg/tree5.jpg'/>","<img src='/assets/img/bg/tree8.jpg'/>","<img src='/assets/img/bg/tree9.jpg'/>","<img src='/assets/img/bg/tree10.jpg'/>"]
 	var fore = ["<img src='/assets/img/bg/fore.gif'/>","<img src='/assets/img/bg/fore2.gif'/>","<img src='/assets/img/bg/fore3.gif'/>","<img src='/assets/img/bg/fore4.gif'/>","<img src='/assets/img/bg/fore5.gif'/>","<img src='/assets/img/bg/fore6.gif'/>","<img src='/assets/img/bg/fore7.gif'/>"]
 
-	// randomBackground = Math.floor(Math.random()* bg.length)
-	//
-	// console.log("waaa " + fore.length)
-
 	for (var i = 0; i < 6; i++) {
 		$('.parallax__layer--base').append(bg[Math.floor(Math.random()* bg.length)])
 		$('.parallax__layer--deep').append(fore[Math.floor(Math.random()* fore.length)])
 	}
-
 
 })
 
@@ -41,14 +36,12 @@ $( window ).ready( function() {
 var x = top.location.pathname;
 if (x !== '/') {
 		$(".Heading").click( function() {
-//		console.log("Go to Work!")
 			$(".parallax").animate({
 				scrollTop: $(".Work").offset().top + -20
 			}, 300);
 		});
 } else {
 		$(".Heading").click( function() {
-//		console.log("Go to Main!")
 				$(".parallax").animate({
 				scrollTop: $(".Main").offset().top + -20
 			}, 300);

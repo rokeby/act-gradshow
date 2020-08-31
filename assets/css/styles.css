@@ -109,6 +109,7 @@ p {
 
 .Heading {
 	min-height: 50vh;
+	cursor: pointer;
 }
 
 #countdown {
@@ -446,6 +447,7 @@ text-align: right;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	position: relative;
+	cursor: pointer;
 }
 
 .Emma-Overlay {
