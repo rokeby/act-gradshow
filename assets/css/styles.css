@@ -183,7 +183,14 @@ text-align: right;
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
-	/* scroll-behavior: smooth; */
+}
+
+.parallax * {
+	animation: fadeIn ease 0.5s;
+	-webkit-animation: fadeIn ease 0.5s;
+	-moz-animation: fadeIn ease 0.5s;
+	-o-animation: fadeIn ease 0.5s;
+	-ms-animation: fadeIn ease 0.5s;
 }
 
 .parallax__layer {
