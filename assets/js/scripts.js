@@ -32,7 +32,7 @@ $( window ).ready( function() {
 
 })
 
-// Header scrolldown
+// Click Heading for scrolldown
 var x = top.location.pathname;
 if (x !== '/') {
 		$(".Heading").click( function() {
