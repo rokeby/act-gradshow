@@ -185,14 +185,6 @@ text-align: right;
 	overflow-y: auto;
 }
 
-.parallax * {
-	animation: fadeIn ease 1s;
-	-webkit-animation: fadeIn ease 1s;
-	-moz-animation: fadeIn ease 1s;
-	-o-animation: fadeIn ease 1s;
-	-ms-animation: fadeIn ease 1s;
-}
-
 .parallax__layer {
 	position: absolute;
 	top: 0;
