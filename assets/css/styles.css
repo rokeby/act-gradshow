@@ -194,8 +194,8 @@ text-align: right;
 }
 
 .parallax__layer--base {
-	transform: translateZ(-1px) scale(3);
-	-webkit-transform: translateZ(-1px) scale(3);
+	transform: translateZ(-1px) scale(2);
+	-webkit-transform: translateZ(-1px) scale(2);
 	pointer-events: none;
 }
 
