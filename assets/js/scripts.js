@@ -25,11 +25,16 @@ $( window ).ready( function() {
 	var bg = ["<img src='/assets/img/bg/tree2.jpg'/>","<img src='/assets/img/bg/tree3.jpg'/>","<img src='/assets/img/bg/tree4.jpg'/>","<img src='/assets/img/bg/tree5.jpg'/>","<img src='/assets/img/bg/tree8.jpg'/>","<img src='/assets/img/bg/tree9.jpg'/>","<img src='/assets/img/bg/tree10.jpg'/>"]
 	var fore = ["<img src='/assets/img/bg/fore.gif'/>","<img src='/assets/img/bg/fore2.gif'/>","<img src='/assets/img/bg/fore3.gif'/>","<img src='/assets/img/bg/fore4.gif'/>","<img src='/assets/img/bg/fore5.gif'/>","<img src='/assets/img/bg/fore6.gif'/>","<img src='/assets/img/bg/fore7.gif'/>"]
 
-	for (var i = 0; i < 6; i++) {
-		$('.parallax__layer--base').append(bg[Math.floor(Math.random()* bg.length)])
-		$('.parallax__layer--deep').append(fore[Math.floor(Math.random()* fore.length)])
-	}
+	var randoBg = bg[Math.floor(Math.random()* bg.length)];
+	var randoFore = fore[Math.floor(Math.random()* fore.length)];
 
+	console.log(randoFore)
+	console.log(randoBg)
+
+	for (var i = 0; i < 10; i++) {
+		$('.parallax__layer--base').append(randoFore)
+		$('.parallax__layer--deep').append(randoBg)
+	}
 })
 
 // Click Heading for scrolldown
