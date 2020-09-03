@@ -4,16 +4,10 @@ $( window ).on('load', function() {
 	setTimeout( function() {
 		footerPos = $('.Footer').position().top;
 		pageEnd = footerPos + ($('.Footer').height()*2) - $(window).height();
-		// console.log("Footer at: " + footerPos)
-		// console.log("viewPort at: " + $(window).height())
-		// console.log("pageEnd at: " + pageEnd)
-
 		$('.parallax').scroll(function() {
 			x = $('.parallax').scrollTop();
-		  // console.log("scrollTop: " + x);
 			if (x > pageEnd) {
 				$('.parallax').scrollTop(pageEnd )
-				// console.log("the end is here")
 			}});
 	},1000)
 
@@ -27,9 +21,6 @@ $( window ).ready( function() {
 
 	var randoBg = bg[Math.floor(Math.random()* bg.length)];
 	var randoFore = fore[Math.floor(Math.random()* fore.length)];
-
-	console.log(randoFore)
-	console.log(randoBg)
 
 	for (var i = 0; i < 10; i++) {
 		$('.parallax__layer--base').append(randoFore)
