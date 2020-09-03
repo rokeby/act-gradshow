@@ -446,7 +446,7 @@ text-align: right;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	position: relative;
-	cursor: pointer;
+	cursor: url('../img/sound.png'), auto;
 }
 
 .Emma-Overlay {
@@ -455,12 +455,6 @@ text-align: right;
 	position: absolute;
 	color: red;
 	z-index: 100;
-}
-
-#clickForSound {
-	display: block;
-	position: absolute;
-	background-color: red;
 }
 
 .Emma-videoWrapper {
