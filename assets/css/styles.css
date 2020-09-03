@@ -457,6 +457,12 @@ text-align: right;
 	z-index: 100;
 }
 
+#clickForSound {
+	display: block;
+	position: absolute;
+	background-color: red;
+}
+
 .Emma-videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */

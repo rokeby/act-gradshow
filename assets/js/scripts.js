@@ -23,7 +23,7 @@ $( window ).on('load', function() {
 $( window ).ready( function() {
 
 	var bg = ["<img src='/assets/img/bg/tree2.jpg'/>","<img src='/assets/img/bg/tree3.jpg'/>","<img src='/assets/img/bg/tree4.jpg'/>","<img src='/assets/img/bg/tree5.jpg'/>","<img src='/assets/img/bg/tree8.jpg'/>","<img src='/assets/img/bg/tree9.jpg'/>","<img src='/assets/img/bg/tree10.jpg'/>"]
-	var fore = ["<img src='/assets/img/bg/fore.gif'/>","<img src='/assets/img/bg/fore2.gif'/>","<img src='/assets/img/bg/fore3.gif'/>","<img src='/assets/img/bg/fore4.gif'/>","<img src='/assets/img/bg/fore5.gif'/>","<img src='/assets/img/bg/fore6.gif'/>","<img src='/assets/img/bg/fore7.gif'/>"]
+	var fore = ["<img src='/assets/img/bg/fore.png'/>","<img src='/assets/img/bg/fore2.png'/>","<img src='/assets/img/bg/fore3.gif'/>","<img src='/assets/img/bg/fore4.gif'/>","<img src='/assets/img/bg/fore5.png'/>","<img src='/assets/img/bg/fore6.gif'/>","<img src='/assets/img/bg/fore7.png'/>"]
 
 	var randoBg = bg[Math.floor(Math.random()* bg.length)];
 	var randoFore = fore[Math.floor(Math.random()* fore.length)];
@@ -38,7 +38,6 @@ $( window ).ready( function() {
 })
 
 // Click Heading for scrolldown
-var x = top.location.pathname;
 if (x !== '/') {
 		$(".Heading").click( function() {
 			$(".parallax").animate({
@@ -54,13 +53,14 @@ if (x !== '/') {
 }
 
 // Emma videos volume on click
+var x = top.location.pathname;
 if (x == "/emma-yimeng-zhu/") {
 	var video1 = new Vimeo.Player($('#video1'));
 	var video2 = new Vimeo.Player($('#video2'));
 	var video3 = new Vimeo.Player($('#video3'));
 	var video4 = new Vimeo.Player($('#video4'));
 
-	$( '.parallax' ).click( function() {
+	$( '.Emma-Overlay' ).click( function() {
 				video1.setVolume(1)
 				video2.setVolume(1)
 				video3.setVolume(1)
