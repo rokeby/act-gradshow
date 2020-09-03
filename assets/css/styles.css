@@ -229,7 +229,7 @@ text-align: right;
 }
 
 .artistItem img {
-	max-height: 50vh;
+	max-height: auto;
 	max-width: 40vw;
 }
 
