@@ -78,6 +78,7 @@ p {
 	font: normal normal normal 2.4rem/110% "Helvetica", sans-serif;
 	padding: 0;
 	margin-top: 0;
+	text-shadow: 1px 1px 4px #000;
 }
 
 .backArrow {
